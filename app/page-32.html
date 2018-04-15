@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title></title>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="SUNLIFE APPLICATION">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="SUNLIFE APPLICATION">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#2F3BA2">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!-- Your styles -->
+    <link rel="stylesheet" href="styles/core.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/page-32.css">
+  </head>
+  <body>
+    <!-- Add your site or app content here -->
+    <header class="subpage1">
+      <nav class="nav-header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-3">
+              <button id="toggle-menu" class="menu-closer">
+                <span></span>
+              </button>
+            </div>
+            <div class="col-6 text-center">
+              <img class="img-fluid d-inline-block" src="images/page-news/bitmap.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <ul id="main-menu" class="menu-collapse in">
+      <div class="m-info d-flex align-items-end">
+        <div class="mt-auto text-center w-100">
+          <div class="m-info-name mx-auto d-inline-block">ĐÀO VIẾT HƯƠNG</div>
+          <hr>
+          <div class="d-flex justify-content-around">
+            <div class="m-info-text m-info-pass">Đổi mật khẩu</div>
+            <div class="m-info-text m-info-logout">Đăng xuất</div>
+          </div>
+        </div>
+      </div>
+      <div class="m-menu">
+        <div class="m-menu-item"><a class="nav-link nav-home" href="javascript:void(0)">Trang chủ</a></div>
+        <div class="m-menu-item"><a class="nav-link nav-search" href="javascript:void(0)">Tìm kiếm</a></div>
+        <div class="m-menu-item m-dropdown">
+          <a href="javascript:void(0)" class="nav-link nav-files">Tình trạng thẩm định</a>
+          <div class="m-dropdown-item">
+            <a href="javascript:void(0)">Chờ thẩm định</a>
+            <a href="javascript:void(0)">Yêu cầu bổ sung thông tin</a>
+            <a href="javascript:void(0)">Yêu cầu thư thỏa thuận</a>
+          </div>
+        </div>
+        <div class="m-menu-item m-dropdown">
+          <a href="javascript:void(0)" class="nav-link nav-hdong">HĐ đã phát hành</a>
+          <div class="m-dropdown-item">
+            <a href="javascript:void(0)">Chờ biên nhận bàn giao</a>
+            <a href="javascript:void(0)">Trong thời hạn cân nhắc</a>
+            <a href="javascript:void(0)">Hủy trong thời hạn cân nhắc</a>
+            <a href="javascript:void(0)">Mất hiệu lực</a>
+          </div>
+        </div>
+        <div class="m-menu-item m-dropdown">
+          <a href="javascript:void(0)" class="nav-link nav-baohiem">Tình trạng yêu cầu bồi thường</a>
+          <div class="m-dropdown-item">
+            <a href="javascript:void(0)">Chờ thẩm định</a>
+            <a href="javascript:void(0)">Yêu cầu bổ sung thông tin</a>
+            <a href="javascript:void(0)">Yêu cầu thư thỏa thuận</a>
+          </div>
+        </div>
+        <div class="m-menu-item"><a class="nav-link nav-dksd" href="javascript:void(0)">Điều khoản sử dụng</a></div>
+      </div>
+    </ul>
+    <div class="container z-index-1033">
+      <div class="row">
+        <div class="col-12">
+          <div class="page-title">QUẢN LÝ HOẠT ĐỘNG</div>
+          <div class="box">
+            <div class="box-um">
+              <div class="box-um-calendar text-center d-flex align-items-center">
+                <div class="calendar-cont mx-auto">02/12/18 - 09/12/18</div>
+              </div>
+              <div id="rp-tabpanel">
+                <ul class="nav nav-tabs text-center nav-justified" role="tablist">
+                  <li role="presentation">
+                    <a href="#kg-kinhdoanh" class="active" aria-controls="kg-kinhdoanh" role="tab" data-toggle="tab">PLAN</a>
+                  </li>
+                  <li role="presentation">
+                    <a href="#kq-hoatdong" aria-controls="kq-hoatdong" role="tab" data-toggle="tab">ACTUAL</a>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade active show" id="kg-kinhdoanh">
+                    <div class="kq-group">
+                      <div class="kq-title">BOS</div>
+                      <ul>
+                        <li>Plan: <span>2,738</span></li>
+                        <li>Attendees: <span>2,738</span></li>
+                      </ul>
+                    </div>
+                    <div class="kq-group">
+                      <div class="kq-title">BOS</div>
+                      <ul>
+                        <li>Plan: <span>2,738</span></li>
+                        <li>Attendees: <span>2,738</span></li>
+                      </ul>
+                    </div>
+                    <div class="kq-group">
+                      <div class="kq-title">BOS</div>
+                      <ul>
+                        <li>Plan: <span>2,738</span></li>
+                        <li>Attendees: <span>2,738</span></li>
+                      </ul>
+                    </div>
+                    <div class="kq-group">
+                      <div class="kq-title">1;1 WITH UNIT MANAGER</div>
+                      <ul>
+                        <li></li>
+                        <li>Attendees: <span>2,738</span></li>
+                      </ul>
+                    </div>
+                    <div class="kq-group">
+                      <div class="kq-title">1;1 WITH UNIT MANAGER</div>
+                      <ul>
+                        <li></li>
+                        <li>Attendees: <span>2,738</span></li>
+                      </ul>
+                    </div>
+                    <div class="kq-group">
+                      <div class="kq-title">BOS</div>
+                      <ul>
+                        <li>Plan: <span>2,738</span></li>
+                        <li>Attendees: <span>2,738</span></li>
+                      </ul>
+                    </div>
+                    <div class="kq-group">
+                      <div class="kq-title">BOS</div>
+                      <ul>
+                        <li>Plan: <span>2,738</span></li>
+                        <li>Attendees: <span>2,738</span></li>
+                      </ul>
+                    </div>
+                    <div class="kq-group">
+                      <div class="kq-title">BOS</div>
+                      <ul>
+                        <li>Plan: <span>2,738</span></li>
+                        <li>Attendees: <span>2,738</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade tab-pane-red" id="kq-hoatdong">
+                    <div class="kq-group">
+                      <div class="kq-title">GS</div>
+                      <ul>
+                        <li>Plan: <span>2,738</span></li>
+                        <li>Attendees: <span>2,738</span></li>
+                      </ul>
+                    </div>
+                    <div class="kq-group">
+                      <div class="kq-title">GS</div>
+                      <ul>
+                        <li>Plan: <span>2,738</span></li>
+                        <li>Attendees: <span>2,738</span></li>
+                      </ul>
+                    </div>
+                    <div class="kq-group">
+                      <div class="kq-title">GS</div>
+                      <ul>
+                        <li>Plan: <span>2,738</span></li>
+                        <li>Attendees: <span>2,738</span></li>
+                      </ul>
+                    </div>
+                    <div class="kq-group">
+                      <div class="kq-title">1;1 WITH UNIT MANAGER</div>
+                      <ul>
+                        <li></li>
+                        <li>Attendees: <span>2,738</span></li>
+                      </ul>
+                    </div>
+                    <div class="kq-group">
+                      <div class="kq-title">1;1 WITH UNIT MANAGER</div>
+                      <ul>
+                        <li></li>
+                        <li>Attendees: <span>2,738</span></li>
+                      </ul>
+                    </div>
+                    <div class="kq-group">
+                      <div class="kq-title">GS</div>
+                      <ul>
+                        <li>Plan: <span>2,738</span></li>
+                        <li>Attendees: <span>2,738</span></li>
+                      </ul>
+                    </div>
+                    <div class="kq-group">
+                      <div class="kq-title">GS</div>
+                      <ul>
+                        <li>Plan: <span>2,738</span></li>
+                        <li>Attendees: <span>2,738</span></li>
+                      </ul>
+                    </div>
+                    <div class="kq-group">
+                      <div class="kq-title">GS</div>
+                      <ul>
+                        <li>Plan: <span>2,738</span></li>
+                        <li>Attendees: <span>2,738</span></li>
+                      </ul>
+                    </div>
+                    <div class="btn btn-info">
+                      <i class="fa fa-plus" aria-hidden="true"></i> Nhập liệu tuần
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="f-subpage">
+      <div class="container">
+        <ul class="text-center">
+          <li><a class="f-menu menu-opener" href="javascript:void(0)">Menu</a></li>
+          <li><a class="f-hd" href="javascript:void(0)">Tình trạng HĐ</a></li>
+          <li><a class="f-search" href="javascript:void(0)">Tìm kiếm HĐ</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/page-32.js"></script>
+  </body>
+</html>
