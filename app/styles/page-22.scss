@@ -515,3 +515,33 @@
     }
   }
 }
+
+.modal{
+  .modal-dialog{
+    margin: 80px 40px;
+    .modal-content{
+      background: #b8e986;
+      p{
+        color: #658237;
+        margin-bottom: 0;
+        font-size: .9rem;
+      }
+    }
+  }
+  &.modal-error{
+    margin-top: 70px;
+    .modal-content{
+      background: #ebafb2;
+      p{
+        color: #a4383d;
+      }
+    }
+    &.error-1{
+      margin-top: 180px;
+    }
+  }
+}
+
+.modal-backdrop {
+  background-color: transparent;
+}

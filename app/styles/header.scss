@@ -249,6 +249,57 @@ header {
         top: 4px;
       }
     }
+    .tk-quan-tri{
+      margin-left: 28px;
+      font-size: 12px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .tk-pos-name{
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      margin-left: 28px;
+      position: relative;
+      padding-right: 30px;
+      margin-bottom: 10px;
+      &:after{
+        content: '';
+        background: url('../images/menu/arr-right.svg') no-repeat center;
+        width: 17px;
+        height: 17px;
+        position: absolute;
+        right: 0;
+        top: 4px;
+      }
+    }
+    .tk-code{
+      margin-left: 28px;
+      font-size: 10px;
+      font-weight: 300;
+      font-style: italic;
+      a{
+        margin-left: 10px;
+        font-size: 10px;
+        font-weight: 300;
+        color: #fff;
+        font-style: italic;
+        background: #EAAB00;
+        padding: 3px 7px;
+        border-radius: 3px;
+      }
+    }
+    .see-more-other-tk{
+      margin-left: 28px;
+      margin-bottom: 16px;
+      font-size: 10px;
+      font-weight: 300;
+      color: #fff;
+      font-style: italic;
+      background: #EAAB00;
+      padding: 3px 7px;
+      border-radius: 3px;
+    }
     hr {
       margin-top: 10px;
       margin-bottom: 10px;

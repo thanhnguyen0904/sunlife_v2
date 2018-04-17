@@ -36,7 +36,6 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <!-- Your styles -->
     <!-- build:css styles/core.css -->
     <link rel="stylesheet" href="styles/core.css">
@@ -50,8 +49,8 @@
     <!-- build:css styles/footer.css -->
     <link rel="stylesheet" href="styles/footer.css">
     <!-- endbuild -->
-    <!-- build:css styles/page-22.css -->
-    <link rel="stylesheet" href="styles/page-22.css">
+    <!-- build:css styles/page-37.css -->
+    <link rel="stylesheet" href="styles/page-37.css">
     <!-- endbuild -->
   </head>
   <body>
@@ -115,104 +114,55 @@
       </div>
     </ul>
     <div class="container z-index-1033">
-      <div class="row">
-        <div class="col-12">
-          <div class="page-title">KẾT QUẢ KINH DOANH</div>
-          <div class="box">
-            <div class="box-um">
-              <div class="group-cont-border-left">
-                <div class="detail-back-link mg-bottom-2 text-left">
-                  <i class="fa fa-angle-right" aria-hidden="true"></i>
-                  CHI TIẾT
-                </div>
-                <div class="d-flex align-items-center">
-                  <div class="gcbl-border mr-auto"></div>
-                  <div class="gcbl-title">
-                    NET AFYP ISSUE
-                    <ul class="dropdown-menu">
-                      <li><a href="javascript:void(0)">01</a></li>
-                      <li><a href="javascript:void(0)">02</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="box-um-calendar text-center d-flex align-items-center">
-                  <i class="fa fa-angle-left" aria-hidden="true"></i>
-                  <div class="calendar-cont mx-auto">Q1/2018</div>
-                  <i class="fa fa-angle-right" aria-hidden="true"></i>
-                </div>
-                <div class="detail-back-link detail-back-link-md mg-top-2 text-left">
-                  <i class="fa fa-angle-right" aria-hidden="true"></i>
-                  NORTH
-                </div>
-                <div class="table-responsive table-thongke">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th></th>
-                        <th>Target</th>
-                        <th>MTD</th>
-                        <th>%</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>North <i class="fa fa-angle-right" aria-hidden="true"></i></td>
-                        <td>59909</td>
-                        <td>79909</td>
-                        <td>50%</td>
-                      </tr>
-                      <tr>
-                        <td>North 1 <i class="fa fa-angle-right" aria-hidden="true"></i></td>
-                        <td>59909</td>
-                        <td>79909</td>
-                        <td>50%</td>
-                      </tr>
-                      <tr>
-                        <td>North 2 <i class="fa fa-angle-right" aria-hidden="true"></i></td>
-                        <td>59909</td>
-                        <td>79909</td>
-                        <td>50%</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="border-blue-full"></div>
-                <div class="title-dashed">
-                  This QTD vs Last QTD (%)
-                  <span class="ml-auto"></span>
-                  <span></span>
-                </div>
-                <div class="title-dashed no-border">
-                  Tỉ lệ duy trì HĐ (%)
-                  <span class="ml-auto"></span>
-                  <span></span>
-                </div>
-              </div>
+      <form class="form-groups">
+        <div class="search-group">
+          <div class="s-title">THAY ĐỔI MẬT KHẨU</div>
+          <div class="s-subtitle text-center">Vui lòng trả lời câu hỏi bảo mật</div>
+          <div class="d-block text-center">
+            <div class="s-question d-inline-block mx-auto">
+              Tên trường tiểu học của bạn?
+              <ul class="dropdown-menu">
+                <li><a class="active" href="javascript:void(0)">Mã số tài chính của bạn?</a></li>
+                <li><a href="javascript:void(0)">Họ của bạn?</a></li>
+                <li><a href="javascript:void(0)">Ngày tháng năm sinh của bạn?</a></li>
+                <li><a href="javascript:void(0)">Số di động đã đăng ký của bạn?</a></li>
+              </ul>
             </div>
+          </div>
+          <input type="text" name="value1" />
+          <div class="s-note text-center">Mật khẩu sẽ được gửi qua SMS vào số di động đã đăng ký của bạn</div>
+        </div>
+        <button type="submit" class="s-submit text-center">GỬI</button>
+      </form>
+    </div>
+
+    <footer>
+      @2017 Sun Life Việt Nam. Bảo lưu mọi quyền lợi.
+    </footer>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" hidden>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="mb-edit">Chỉnh sửa thông tin</div>
+            <input type="text" name="edit" placeholder="test@gmail.com" />
+            <button type="submit">Lưu</button>
           </div>
         </div>
       </div>
     </div>
 
-    <footer id="f-subpage">
-      <div class="container">
-        <ul class="text-center">
-          <li><a class="f-menu menu-opener" href="javascript:void(0)">Menu</a></li>
-          <li><a class="f-hd" href="javascript:void(0)">Tình trạng HĐ</a></li>
-          <li><a class="f-search" href="javascript:void(0)">Tìm kiếm HĐ</a></li>
-        </ul>
-      </div>
-    </footer>
-
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.js"></script>
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-    <!-- build:js scripts/page-22.js -->
-    <script src="scripts/page-22.js"></script>
+    <!-- build:js scripts/page-37.js -->
+    <script src="scripts/page-37.js"></script>
     <!-- endbuild -->
   </body>
 </html>

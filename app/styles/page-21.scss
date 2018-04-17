@@ -8,6 +8,12 @@
   padding: 1rem;
 }
 
+body.modal-open{
+  #main-menu{
+    z-index: 1039 !important;
+  }
+}
+
 .box-um{
   .title{
     font-size: .9rem;
@@ -271,6 +277,98 @@
     }
     li {
       width: 15%;
+    }
+  }
+}
+
+.modal.modal-nhapsotk{
+  z-index: 9999;
+  top: 50%;
+  margin-top: -150px;
+  .modal-content {
+    background: transparent;
+    border: none;
+    .modal-header {
+      background: transparent;
+      border-bottom: none;
+      padding: 5px;
+      .modal-title {
+        visibility: hidden;
+      }
+      button.close {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        padding: 0;
+        border-radius: 0;
+        outline: none;
+        border: none;
+        z-index: 1034;
+        &:after, &:before{
+          content: " ";
+          width: 25px;
+          height: 1px;
+          background-color: #eaab00;
+          display: block;
+          opacity: 1;
+          position: absolute;
+          transition: all .75s;
+          top: 50%;
+          margin-top: -1.5px;
+          left: 0;
+        }
+        &:before{
+          transform: rotate(45deg);
+        }
+        &:after{
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    .modal-body {
+      background: #fff;
+      border-bottom: none;
+      padding: 30px 15px;
+      .mb-edit {
+        font-size: 14px;
+        font-weight: 600;
+        color: #003946;
+        margin-bottom: 22px;
+      }
+      input {
+        border: 1px solid rgba(129,120,112,.5);
+        background: #ececec;
+        border-radius: 50px;
+        height: 40px;
+        padding: 10px 20px;
+        color: #c0c0c0;
+        font-size: 13px;
+        width: 100%;
+        margin-bottom: 14px;
+      }
+      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #181818;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        color: #181818;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        color: #181818;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        color: #181818;
+      }
+      button {
+        outline: none;
+        border: none;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        width: 100%;
+        background: #003946;
+        padding: 20px 25px;
+        border-radius: 50px
+      }
     }
   }
 }

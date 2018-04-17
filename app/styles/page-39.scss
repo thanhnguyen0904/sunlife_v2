@@ -1,0 +1,226 @@
+body {
+  display: flex;
+  flex-direction: column;
+  &:before{
+    background: url('../images/page-login/bim.jpg') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(4px);
+  }
+  &.pageloading{
+    &:before{
+      background: rgba(0,0,0,0.5);
+      z-index: 1037;
+      width: 100%;
+      height: 100%;
+    }
+    .loader{
+      position: fixed;
+      top: 50%;
+      left: 40%;
+      margin-left: 10%;
+      transform: translate3d(-50%,-50%,0);
+      z-index: 1038;
+      .dot{
+        width: 24px;
+        height: 24px;
+        background: #EAAB00;
+        border-radius: 100%;
+        display: inline-block;
+        animation: slides 1s infinite;
+      }
+      @for $n from 1 through 5 {
+        .dot:nth-child(#{$n}){
+          animation-delay: (.1s * $n);
+          background: orange(#EAAB00, (50 * $n));
+        }
+      }
+    }
+  }
+}
+@keyframes slides{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    opacity: .3;
+    transform: scale(2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+
+footer{
+  margin-top: auto;
+  padding-bottom: 17px;
+  color: #fff;
+  font-size: 11px;
+  opacity: .6;
+}
+
+.group-log{
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  max-width: 375px;
+  margin: 0 auto;
+  .logo {
+    width: 71%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .logo1{
+    margin-top: 48px;
+    margin-bottom: 23px;
+  }
+  .pass-title{
+    font-size: 18px;
+    font-weight: 600;
+    color: #003946;
+    margin-bottom: 150px;
+  }
+  .security-title{
+    font-size: 18px;
+    font-weight: 600;
+    color: #003946;
+    margin-bottom: 31px;
+  }
+  ul.security-dots{
+    padding-left: 0;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    position: relative;
+    span{
+      background: url('../images/page-login/close.svg') no-repeat center;
+      width: 23px;
+      height: 17px;
+      display: inline-block;
+      position: absolute;
+      top: -5px;
+      right: -55px;
+    }
+    li{
+      float: left;
+      width: 10px;
+      height: 10px;
+      margin-left: 7.5px;
+      margin-right: 7.5px;
+      background: #000000;
+      opacity: .1;
+      border-radius: 100%;
+      border: 1px solid transparent;
+      &.active{
+        border: 1px solid #807870;
+        background-color: #eaab00;
+        opacity: 1;
+      }
+    }
+  }
+  .security-number{
+    padding-left: 43px;
+    padding-right: 43px;
+    max-width: 325px;
+    .col-4{
+      margin-bottom: 30px;
+    }
+    a{
+      border: 1px solid #817870;
+      padding: 16px 26px 15px 27px;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+      font-size: 18px;
+      font-weight: 300;
+      color: #82786f;
+      background: rgba(234, 171, 0, 0.2);
+      &:hover, &:focus, &.active{
+        background: rgba(18, 56, 68, 0.2);
+      }
+    }
+  }
+  .input-group{
+    margin-bottom: 0 !important;
+    .input-group-addon{
+      &.iga-name{
+        background: url('../images/page-login/username.svg') no-repeat center;
+      }
+      &.iga-pass{
+        background: url('../images/page-login/password.svg') no-repeat center;
+      }
+      position: absolute;
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      top: 15px;
+      left: 22px;
+      width: 25px;
+      height: 25px
+    }
+    input{
+      background: transparent;
+      border: 1px solid #181818;
+      border-radius: 50px !important;
+      height: 55px;
+      color: #82786f;
+      font-size: 13px;
+      padding: 20px 15px 18px 60px;
+      margin-bottom: 5px;
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #82786f;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: #82786f;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+      color: #82786f;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+      color: #82786f;
+    }
+  }
+  button{
+    margin-top: 20px;
+    margin-bottom: 21px;
+    background: #EAAB00;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 50px;
+    outline: none;
+    padding: 20px 40px;
+    width: 100%;
+  }
+  .pass-forget{
+    font-size: 11px;
+    color: #181818;
+    opacity: .5;
+    &:hover, &:focus{
+      text-decoration: none;
+    }
+  }
+}
+
+form.form-groups{
+  .search-group{
+    .s-subtitle{
+      font-size: 14px;
+      color: #003946;
+      margin-bottom: 20px;
+    }
+    .s-subtitle1{
+      font-size: 13px;
+      font-weight: 300;
+      color: #181818;
+      margin: 17px 0;
+    }
+  }
+}
