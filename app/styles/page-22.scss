@@ -402,15 +402,19 @@
       margin: 0 3px;
     }
   }
-  .btn.btn-info{
-    margin-top: 20px;
-    background: #003946;
-    border-radius: 50px;
-    color: #fff;
-    font-size: 13px;
-    font-weight: bold;
-    padding: 20px 30px;
-    width: 100%;
+}
+
+.btn.btn-info{
+  margin-top: 10px;
+  background: #003946;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 20px 30px;
+  width: 100%;
+  &.mg-top-2{
+    margin-top: 25px;
   }
 }
 
@@ -544,4 +548,11 @@
 
 .modal-backdrop {
   background-color: transparent;
+}
+
+small.milli-vnd{
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  color: #979797;
 }
