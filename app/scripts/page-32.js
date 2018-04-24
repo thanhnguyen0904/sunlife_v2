@@ -12,7 +12,11 @@
       $(this).find('.dropdown-menu').toggleClass('show')
     })
 
-    $('.modal').modal('show')
+    $('.tab-pane .btn.btn-info').on('click', function() {
+      $('.modal').modal('show')
+    })
+
+
 
   })
 })(jQuery)
