@@ -63,10 +63,12 @@
         display: flex;
         visibility: hidden;
         transform: scale(0);
+        z-index: -1;
         &.show{
           opacity: 1;
           transform: scale(1);
           visibility: visible;
+          z-index: 9999;
         }
         li{
           width: 100%;
@@ -176,6 +178,8 @@
     canvas{
       width: 100% !important;
       height: 100% !important;
+      min-width: 100px;
+      min-height: 100px;
     }
     div.percent-text{
       color: #eaab00;
@@ -391,6 +395,9 @@
     padding-bottom: 5px;
     display: flex;
     align-items: center;
+    &.mg-top-1{
+      margin-top: 5px;
+    }
     &.no-border{
       margin-top: 5px;
       border: none;

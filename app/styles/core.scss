@@ -66,4 +66,7 @@ body {
 //}
 .container{
   max-width: 750px !important;
+  &.pd-bottom-5{
+    padding-bottom: 50px;
+  }
 }
