@@ -339,6 +339,15 @@
               font-weight: bold;
             }
           }
+          span{
+            background: #eaab00;
+            width: 20%;
+            height: 2px;
+            margin: 0 2px;
+            display: inline-block;
+            position: relative;
+            top: -2px;
+          }
         }
         &:last-child{
           td{
