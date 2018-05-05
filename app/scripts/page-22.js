@@ -12,6 +12,13 @@
       $(this).find('ul.dropdown-menu').toggleClass('show')
     })
 
+    $('.tab-pane .kq-thongke-dropdown').on('click', function(e) {
+      console.log('123213');
+      e.preventDefault();
+      ($(this).parents('.tab-pane').siblings('.tab-pane').find('.kq-thongke-dropdown ul').hasClass('show')) ? $(this).parents('.tab-pane').siblings('.tab-pane').find('.kq-thongke-dropdown ul').removeClass('show') : '';
+      $(this).find('ul.dropdown-menu').toggleClass('show')
+    })
+
     $('.percent').circleProgress({
       startAngle: 4.7,
       value: .75,

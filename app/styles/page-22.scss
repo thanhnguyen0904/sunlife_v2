@@ -258,7 +258,9 @@
         font-weight: 600;
         color: #eaab00;
       }
-      .md-title{
+      .md-title, a.md-title{
+        text-decoration: none;
+        display: block;
         font-size: 20px;
         font-weight: bold;
         color: #003946;
@@ -369,7 +371,74 @@
     color: #003946;
     margin-bottom: 10px;
   }
-  .detail-back-link{
+  .kq-thongke-dropdown{
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    margin-top: -20px;
+    font-size: 21px;
+    font-weight: bold;
+    color: #003946;
+    padding-right: 20px;
+    &:after{
+      content: '';
+      background: url(../images/menu/arr-down.svg) no-repeat center;
+      width: 13px;
+      height: 14px;
+      font-size: 14px;
+      color: #eaab00;
+      position: absolute;
+      top: 10px;
+      right: 0;
+      transform: rotate(90deg);
+    }
+    ul.dropdown-menu{
+      height: auto;
+      width: 100%;
+      flex-wrap: wrap;
+      padding-left: 0;
+      list-style-type: none;
+      position: absolute;
+      background: #fff;
+      padding: 0;
+      top: 35px;
+      left: 0 !important;
+      right: inherit !important;
+      border: 1px solid #CFD8DC;
+      z-index: 9999;
+      transform: none !important;
+      transition: all .5s ease;
+      opacity: 0;
+      display: flex;
+      visibility: hidden;
+      transform: scale(0);
+      z-index: -1;
+      &.show{
+        opacity: 1;
+        transform: scale(1);
+        visibility: visible;
+        z-index: 9999;
+      }
+      li{
+        width: 100%;
+        a{
+          display: block;
+          color: #000000;
+          font-size: 13px;
+          transition: all .2s ease;
+          padding: 8px 5px;
+          font-weight: normal;
+          outline: none;
+          &:hover, &:focus, &.active{
+            background: #f5f5f5;
+          }
+        }
+      }
+    }
+  }
+  .detail-back-link, a.detail-back-link{
+    display: inline-block;
+    text-decoration: none;
     position: relative;
     padding-left: 15px;
     font-size: 21px;

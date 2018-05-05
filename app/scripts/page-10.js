@@ -3,6 +3,9 @@
   'use strict'
 
   $(document).ready(function () {
-    $('.modal').modal('show')
+    // $('button.s-submit').on('click', function(){
+      $('.modal').modal('show')
+    //   return false;
+    // })
   })
 })(jQuery)
